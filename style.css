@@ -99,6 +99,15 @@ a {
     background-color: rgb(244, 242, 242);
 }
 
+#get-involved__button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    color: rgb(244, 242, 242);
+    font-weight: 500;
+    background-color: rgb(80, 188, 189);
+}
+
 #contact {
     background-color: rgb(79, 86, 157);
 }
