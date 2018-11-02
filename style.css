@@ -111,3 +111,9 @@ a {
 #contact {
     background-color: rgb(79, 86, 157);
 }
+
+#supported {
+    height: 200px;
+    color: rgb(244, 242, 242);
+    background-color: rgb(255, 105, 95);
+}
