@@ -5,8 +5,19 @@ body {
 }
 
 #hero {
-    height: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: rgb(255, 105, 95);
+}
+
+#hero__logo,
+#hero__arrow {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #summary {
