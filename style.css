@@ -67,7 +67,7 @@ a {
 #get-involved__text,
 #contact__text {
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 4rem 2rem;
 }
 
 #summary__text,
@@ -80,12 +80,14 @@ a {
     color: rgb(244, 242, 242);
 }
 
-#summary__cta,
-#get-involved__cta,
 #contact__cta {
-    border-bottom: 2px solid rgb(80, 188, 189);
     padding: 2rem 0 0 0;
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+#contact__cta a {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(244, 242, 242);
 }
 
 #features {
