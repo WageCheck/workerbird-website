@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Muli|Quicksand");
+
 body {
+    box-sizing: border-box;
+}
+
+#hero {
+    height: 200px;
     background-color: rgb(255, 105, 95);
+}
+
+#summary {
+    background-color: rgb(244, 242, 242);
+    height: 200px;
+}
+
+#features {
+    background-color: rgb(80, 188, 189);
+    height: 200px;
+}
+
+#get-involved {
+    background-color: rgb(244, 242, 242);
+    height: 200px;
+}
+
+#contact {
+    background-color: rgb(79, 86, 157);
+    height: 200px;
 }
