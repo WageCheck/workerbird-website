@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
-  width: 100vw;
+  width: 100%;
 }
 
 #nav {
@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   max-height: 51px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
 }
 
@@ -26,7 +26,7 @@ body {
   height: calc(100vh - 51px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgb(255, 105, 95);
 }
 
@@ -38,6 +38,15 @@ body {
   justify-content: center;
 }
 
+#logo__img,
+#logo__title {
+  margin: 0 2rem;
+}
+
+#logo__arrow {
+  width: 3rem;
+}
+
 #summary {
   background-color: rgb(244, 242, 242);
 }
@@ -46,7 +55,7 @@ h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 
 a {
@@ -54,29 +63,33 @@ a {
   color: inherit;
 }
 
-#summary__text,
-#get-involved__text,
-#contact__text {
+#summary__content,
+#get-involved__content,
+#contact__content,
+#supported-by__content {
   text-align: center;
-  padding: 2rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
 }
 
-#summary__text,
-#get-involved__text {
+#summary__content,
+#get-involved__content {
   color: rgb(45, 45, 45);
 }
 
-#features__text,
-#contact__text {
+#features__content,
+#contact__content,
+#supported-by__content {
   color: rgb(244, 242, 242);
 }
 
-#summary__cta,
-#get-involved__cta,
 #contact__cta {
-  border-bottom: 2px solid rgb(80, 188, 189);
   padding: 2rem 0 0 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+#contact__cta a {
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid rgb(244, 242, 242);
 }
 
 #features {
@@ -88,6 +101,26 @@ a {
   background-color: rgb(244, 242, 242);
 }
 
+#get-involved__button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: rgb(244, 242, 242);
+  font-weight: 500;
+  background-color: rgb(80, 188, 189);
+}
+
 #contact {
   background-color: rgb(79, 86, 157);
+}
+
+#supported-by {
+  color: rgb(244, 242, 242);
+  background-color: rgb(255, 105, 95);
+}
+
+#supported-by__logo img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
 }
