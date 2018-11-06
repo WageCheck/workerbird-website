@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli|Quicksand:400,500');
+@import url("https://fonts.googleapis.com/css?family=Muli|Quicksand:400,500");
 
 body {
   font-family: Quicksand;
@@ -15,6 +15,7 @@ body {
   max-height: 51px;
   width: 100%;
   position: fixed;
+  z-index: 10;
 }
 
 #nav__menu-icon {
@@ -94,7 +95,6 @@ a {
 
 #features {
   background-color: rgb(80, 188, 189);
-  height: 200px;
 }
 
 #get-involved {
@@ -123,4 +123,69 @@ a {
   width: 200px;
   display: block;
   margin: 0 auto;
+}
+
+.main-carousel {
+  height: 8rem;
+}
+
+.features__cell {
+  display: flex;
+  width: 75%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.features__cell h3 {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.carousel-cell {
+  width: 100%; /* full width */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem rgb(255, 105, 95);
+}
+
+/* smaller, dark, rounded square */
+.flickity-button {
+  background: rgb(244, 242, 242);
+}
+.flickity-button:hover {
+  background: rgb(255, 105, 95);
+}
+
+.flickity-prev-next-button {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 4px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: rgb(80, 188, 189);
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: 0.5rem;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  background: rgb(244, 242, 242);
+  margin: 0 0.5rem;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: rgb(255, 105, 95);
 }

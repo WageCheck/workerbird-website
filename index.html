@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>workerbird</title>
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="style.css" /> <!-- load this last -->
 </head>
 
 <body>
@@ -33,24 +34,48 @@
             <div id="summary__content">
                 <h2>helping workers collect what they deserve</h2>
                 <p>
-                    Hello, we are workerbird. We help workers track their work life. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Vivamus sed nisl sollicitudin, egestas ligula vitae, vehicula tortor. Duis et sapien euismod, scelerisque
-                    urna commodo, imperdiet leo. Aenean in urna at augue porta convallis. Nunc fermentum imperdiet ornare.
+                    Hello, we are workerbird. We help workers track their work life. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    Vivamus sed nisl sollicitudin, egestas ligula vitae, vehicula tortor. Duis et sapien euismod,
+                    scelerisque
+                    urna commodo, imperdiet leo. Aenean in urna at augue porta convallis. Nunc fermentum imperdiet
+                    ornare.
                     Cras non convallis felis.
                 </p>
             </div>
         </section>
         <section id="features">
             <!-- app features -->
+            <div id="features__content">
+                <h2>features</h2>
+                <div class="main-carousel" data-flickity='{ "autoPlay": 6000, "contain": true }'>
+                    <div class="carousel-cell">
+                        <div class="features__cell">
+                            <h3>Track and understand your working life</h3>
+                            <p>Olupti nimaxim uscimpos eat lam
+                                verferi bustion esseditat illiquia
+                                prestem harunto ernam isiteni
+                                hicilibernam iniae et eicit vel Olupti
+                                nimaxim uscimpos eat lam verferi
+                                bustion esseditat illiquia prestem</p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">2</div>
+                    <div class="carousel-cell">3</div>
+                </div>
+            </div>
         </section>
         <section id="get-involved">
             <!-- get involved / testers -->
             <div id="get-involved__content">
                 <h2>get involved</h2>
                 <p>
-                    workerbird is looking for testers for its first version. Track your working hours, commute, work travel and unpaid/paid breaks
-                    using a timer or manually. Get visual reports on your working day, weekly hours and your pay over time.
-                    Understand whether your hourly rate is above the national minimum wage and how it compares to the real
+                    workerbird is looking for testers for its first version. Track your working hours, commute, work
+                    travel and unpaid/paid breaks
+                    using a timer or manually. Get visual reports on your working day, weekly hours and your pay over
+                    time.
+                    Understand whether your hourly rate is above the national minimum wage and how it compares to the
+                    real
                     living wage.
                 </p>
                 <a id="get-involved__button" href="workerbird.app/signup">sign up</a>
@@ -61,11 +86,13 @@
             <div id="contact__content">
                 <h2>contact us</h2>
                 <p>
-                    As we develop beyond the first version of workerbird, we would like to hear from interested organisations and individuals
-                    so please get in touch. We are looking for partner organisations to develop and trial specific features
-                    with us. These could be specific to a sector (such as recording tips in hospitality) or relevant to all
+                    As we develop beyond the first version of workerbird, we would like to hear from interested
+                    organisations and individuals
+                    so please get in touch. We are looking for partner organisations to develop and trial specific
+                    features
+                    with us. These could be specific to a sector (such as recording tips in hospitality) or relevant to
+                    all
                     workers (such as holiday and sick pay). We look forward to hearing from you.
-
                 </p>
                 <p id="contact__cta"><a href="mailto:hello@workerbird.co.uk">hello@workerbird.co.uk</a></p>
             </div>
@@ -77,7 +104,7 @@
         </section>
         </div>
     </main>
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>
