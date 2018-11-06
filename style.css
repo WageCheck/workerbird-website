@@ -65,6 +65,7 @@ a {
 }
 
 #summary__content,
+#features__content,
 #get-involved__content,
 #contact__content,
 #supported-by__content {
@@ -125,37 +126,65 @@ a {
   margin: 0 auto;
 }
 
-.main-carousel {
-  height: 8rem;
+/*
+*   CAROUSEL STYLING
+*   class names mostly flickity default: https://flickity.metafizzy.co/options.html
+*/
+
+/* main carousel styling */
+.carousel {
+  height: 250px;
 }
 
-.features__cell {
+.carousel-cell {
+  width: 90%;
+  height: 100%;
+  margin: 0 2rem;
   display: flex;
-  width: 75%;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.features__cell h3 {
+/* carousel element styling */
+.carousel-cell h3 {
   font-weight: 500;
   margin: 0.5rem 0;
+  display: flex;
+  text-align: left;
 }
 
-.carousel-cell {
-  width: 100%; /* full width */
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel-cell p {
+  text-align: left;
 }
+
+.carousel-cell hr {
+  width: 100%;
+  height: 0.5rem;
+  margin: 0.5rem;
+  padding: 0;
+  border: none;
+  border-top: 2px solid rgb(244, 242, 242);
+}
+
+.carousel-cell .carousel__icon {
+  display: block;
+  width: 3rem;
+}
+
+.carousel-cell .carousel__screenshot {
+  display: block;
+  height: 150px;
+  margin: 2rem;
+}
+
+/* prev/next button styling */
 
 .flickity-button:focus {
   outline: none;
   box-shadow: 0 0 0 0.25rem rgb(255, 105, 95);
 }
 
-/* smaller, dark, rounded square */
 .flickity-button {
   background: rgb(244, 242, 242);
 }
@@ -168,16 +197,24 @@ a {
   height: 1.5rem;
   border-radius: 4px;
 }
-/* icon color */
+
+.flickity-prev-next-button.previous {
+  left: -1.5rem;
+}
+.flickity-prev-next-button.next {
+  right: -1.5rem;
+}
+
 .flickity-button-icon {
   fill: rgb(80, 188, 189);
 }
 
-/* position dots in carousel */
+/* carousel dots styling */
+
 .flickity-page-dots {
-  bottom: 0.5rem;
+  bottom: -2rem;
 }
-/* white circles */
+
 .flickity-page-dots .dot {
   width: 8px;
   height: 8px;
@@ -185,7 +222,7 @@ a {
   background: rgb(244, 242, 242);
   margin: 0 0.5rem;
 }
-/* fill-in selected dot */
+
 .flickity-page-dots .dot.is-selected {
   background: rgb(255, 105, 95);
 }
