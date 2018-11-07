@@ -17,13 +17,24 @@ body {
   position: fixed;
 }
 
-#nav__menu-icon {
+#nav__mobile-icon {
   margin: 1rem 0.5rem 1rem 0;
+}
+
+.nav__mobile {
+  display: none;
+}
+
+.nav__desktop {
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  justify-content: space-around;
 }
 
 #hero {
   padding-top: 51px;
-  height: calc(100vh - 51px);
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -36,11 +47,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: 250px;
 }
 
 #logo__img,
 #logo__title {
   margin: 0 2rem;
+  max-width: 250px;
 }
 
 #logo__arrow {
