@@ -1,139 +1,187 @@
-@import url('https://fonts.googleapis.com/css?family=Muli|Quicksand:400,500');
+@import url("https://fonts.googleapis.com/css?family=Muli|Quicksand:400,500");
 
 body {
-  font-family: Quicksand;
-  box-sizing: border-box;
-  font-weight: 400;
-  font-size: 16px;
-  width: 100%;
+    font-family: Quicksand;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
 }
 
 #nav {
-  background-color: rgb(255, 105, 95);
-  display: flex;
-  flex-direction: row-reverse;
-  max-height: 51px;
-  width: 100%;
-  position: fixed;
+    background-color: rgb(255, 105, 95);
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: 51px;
+    width: 100%;
+    position: fixed;
 }
 
 #nav__mobile-icon {
-  margin: 1rem 0.5rem 1rem 0;
+    margin: 1rem 0.5rem 1rem 0;
 }
 
 .nav__mobile {
-  display: none;
+    display: none;
 }
 
 .nav__desktop {
-  width: 100%;
-  display: none;
-  padding: 1rem;
-  justify-content: space-around;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#nav__menu-icon {
+    display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#nav__menu-icon input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    right: -5px;
+
+    cursor: pointer;
+
+    /* opacity: 0; /* hide this */
+    z-index: 15; /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+#nav__menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+
+    background: rgb(255, 105, 95);
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#nav__menu-icon input:checked ~ ul {
+    transform: none;
 }
 
 #hero {
-  padding-top: 51px;
-  padding-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: rgb(255, 105, 95);
+    padding-top: 51px;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 105, 95);
 }
 
 #hero__logo,
 #hero__arrow {
-  flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 250px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 250px;
 }
 
 #logo__img,
 #logo__title {
-  margin: 0 2rem;
-  max-width: 250px;
+    margin: 0 2rem;
+    max-width: 250px;
 }
 
 #logo__arrow {
-  width: 3rem;
+    width: 3rem;
 }
 
 #summary {
-  background-color: rgb(244, 242, 242);
+    background-color: rgb(244, 242, 242);
 }
 
 h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2rem 0;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 #summary__content,
 #get-involved__content,
 #contact__content,
 #supported-by__content {
-  text-align: center;
-  padding: 2rem 2rem 4rem 2rem;
+    text-align: center;
+    padding: 2rem 2rem 4rem 2rem;
 }
 
 #summary__content,
 #get-involved__content {
-  color: rgb(45, 45, 45);
+    color: rgb(45, 45, 45);
 }
 
 #features__content,
 #contact__content,
 #supported-by__content {
-  color: rgb(244, 242, 242);
+    color: rgb(244, 242, 242);
 }
 
 #contact__cta {
-  padding: 2rem 0 0 0;
-  margin-bottom: 0.75rem;
+    padding: 2rem 0 0 0;
+    margin-bottom: 0.75rem;
 }
 
 #contact__cta a {
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgb(244, 242, 242);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgb(244, 242, 242);
 }
 
 #features {
-  background-color: rgb(80, 188, 189);
-  height: 200px;
+    background-color: rgb(80, 188, 189);
+    height: 200px;
 }
 
 #get-involved {
-  background-color: rgb(244, 242, 242);
+    background-color: rgb(244, 242, 242);
 }
 
 #get-involved__button {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 0.5rem 2rem;
-  color: rgb(244, 242, 242);
-  font-weight: 500;
-  background-color: rgb(80, 188, 189);
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem;
+    color: rgb(244, 242, 242);
+    font-weight: 500;
+    background-color: rgb(80, 188, 189);
 }
 
 #contact {
-  background-color: rgb(79, 86, 157);
+    background-color: rgb(79, 86, 157);
 }
 
 #supported-by {
-  color: rgb(244, 242, 242);
-  background-color: rgb(255, 105, 95);
+    color: rgb(244, 242, 242);
+    background-color: rgb(255, 105, 95);
 }
 
 #supported-by__logo img {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
 }
