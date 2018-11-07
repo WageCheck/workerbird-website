@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Muli|Quicksand:400,500");
+@import url('https://fonts.googleapis.com/css?family=Muli|Quicksand:400,500');
 
 body {
   font-family: Quicksand;
@@ -133,7 +133,7 @@ a {
 
 /* main carousel styling */
 .carousel {
-  height: 250px;
+  height: 425px;
 }
 
 .carousel-cell {
@@ -151,10 +151,16 @@ a {
   font-weight: 500;
   margin: 0.5rem 0;
   display: flex;
-  text-align: left;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
-.carousel-cell p {
+.carousel__feature-title {
+  text-align: center;
+  font-weight: 700;
+}
+
+.carousel-cell .carousel__feature-desc {
   text-align: left;
 }
 
@@ -162,9 +168,12 @@ a {
   width: 100%;
   height: 0.5rem;
   margin: 0.5rem;
-  padding: 0;
   border: none;
   border-top: 2px solid rgb(244, 242, 242);
+}
+
+.carousel__feature-desc {
+  display: none;
 }
 
 .carousel-cell .carousel__icon {
@@ -174,8 +183,8 @@ a {
 
 .carousel-cell .carousel__screenshot {
   display: block;
-  height: 150px;
-  margin: 2rem;
+  height: 325px;
+  margin-bottom: 1rem;
 }
 
 /* prev/next button styling */
@@ -186,8 +195,16 @@ a {
 }
 
 .flickity-button {
+  display: none;
   background: rgb(244, 242, 242);
 }
+
+@media screen and (min-width: 450px) {
+  .flickity-button {
+    display: block;
+  }
+}
+
 .flickity-button:hover {
   background: rgb(255, 105, 95);
 }
