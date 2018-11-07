@@ -18,20 +18,17 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="#">
+                <a onclick="uncheck()" href="#">
                     <li>Home</li>
                 </a>
-                <a href="#">
+                <a onclick="uncheck()" href="#summary">
                     <li>About</li>
                 </a>
-                <a href="#">
-                    <li>Info</li>
+                <a onclick="uncheck()" href="#get-involved">
+                    <li>Get Involved</li>
                 </a>
-                <a href="#">
+                <a onclick="uncheck()" href="#contact">
                     <li>Contact</li>
-                </a>
-                <a href="https://erikterwan.com/" target="_blank">
-                    <li>Show me more</li>
                 </a>
             </ul>
         </div>
@@ -104,5 +101,8 @@
     </main>
 
 </body>
+<script>
+    const uncheck = () => document.getElementById("menu__checkbox").checked = false;
+</script>
 
 </html>
