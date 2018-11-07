@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>workerbird</title>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css" />
+    <!-- load this last -->
 </head>
 
 <body>
@@ -58,6 +60,51 @@
         </section>
         <section id="features">
             <!-- app features -->
+            <div id="features__content">
+                <h2>features</h2>
+                <div class="carousel" data-flickity='{"setGallerySize": false, "autoPlay": 5000}' aria-live="polite">
+                    <div class="carousel-cell">
+                        <div class="carousel__features">
+                            <img class="carousel__icons" src="assets/icons/track_icon.svg" alt="">
+                            <hr>
+                            <h3 class="carousel__feature-title--desktop">Track and understand your working life</h3>
+                            <p class="carousel__feature-desc">Olupti nimaxim uscimpos eat lam verferi bustion esseditat illiquia
+                                prestem harunto ernam isiteni hicilibernam iniae et eicit vel Olupti nimaxim uscimpos eat
+                                lam verferi bustion esseditat illiquia prestem
+                            </p>
+                        </div>
+                        <img class="carousel__screenshot" alt="Workerbird Screenshot" src="/assets/screenshots/screenshot_track.png" />
+                        <h3 class="carousel__feature-title">Track and understand your working life</h3>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="carousel__features">
+                            <img class="carousel__icons" src="assets/icons/mobile_icon.svg" alt="">
+                            <hr>
+                            <h3 class="carousel__feature-title--desktop">Track and understand your working life</h3>
+                            <p class="carousel__feature-desc">Olupti nimaxim uscimpos eat lam verferi bustion esseditat illiquia
+                                prestem harunto ernam isiteni hicilibernam iniae et eicit vel Olupti nimaxim uscimpos eat
+                                lam verferi bustion esseditat illiquia prestem
+                            </p>
+                        </div>
+                        <img class="carousel__screenshot" alt="Workerbird Screenshot" src="/assets/screenshots/screenshot_payslip.png" />
+                        <h3 class="carousel__feature-title">Get insights into your working day</h3>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="carousel__features">
+                            <img class="carousel__icons" src="assets/icons/advice_logo.svg" alt="">
+                            <hr>
+                            <h3 class="carousel__feature-title--desktop">Track and understand your working life</h3>
+
+                            <p class="carousel__feature-desc">Olupti nimaxim uscimpos eat lam verferi bustion esseditat illiquia
+                                prestem harunto ernam isiteni hicilibernam iniae et eicit vel Olupti nimaxim uscimpos eat
+                                lam verferi bustion esseditat illiquia prestem
+                            </p>
+                        </div>
+                        <img class="carousel__screenshot" alt="Workerbird Screenshot" src="/assets/screenshots/screenshot_home.png" />
+                        <h3 class="carousel__feature-title">Access advice and support</h3>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="get-involved">
             <!-- get involved / testers -->
@@ -87,7 +134,6 @@
                     with us. These could be specific to a sector (such as recording tips in hospitality) or relevant to
                     all
                     workers (such as holiday and sick pay). We look forward to hearing from you.
-
                 </p>
                 <p id="contact__cta"><a href="mailto:hello@workerbird.co.uk">hello@workerbird.co.uk</a></p>
             </div>
@@ -99,7 +145,7 @@
         </section>
         </div>
     </main>
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 <script>
     const uncheck = () => document.getElementById("menu__checkbox").checked = false;
