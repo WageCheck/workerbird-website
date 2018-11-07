@@ -124,14 +124,35 @@ a {
 }
 
 #supported-by {
-  color: rgb(244, 242, 242);
-  background-color: rgb(255, 105, 95);
+  background-color: rgb(244, 242, 242);
 }
 
-#supported-by__logo img {
+#supported-by h2 {
+  color: rgb(45, 45, 45);
+}
+
+.supported-by__logo img {
   width: 200px;
   display: block;
   margin: 0 auto;
+}
+
+.bgv__logo {
+  filter: invert(1);
+}
+
+#supported-by__logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+  #supported-by__logos {
+    flex-direction: row;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -437,4 +458,15 @@ a {
   .flickity-prev-next-button.next {
     right: 7rem;
   }
+}
+
+.workerbird__black {
+  height: 100px;
+  filter: invert(1);
+  padding: 0 1rem 2rem 1rem;
+}
+
+.workerbird__white {
+  width: 100px;
+  padding: 0 1rem 2rem 1rem;
 }
