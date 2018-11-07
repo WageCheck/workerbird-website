@@ -125,10 +125,24 @@ a {
     background-color: rgb(255, 105, 95);
 }
 
-#supported-by__logo img {
+.supported-by__logo img {
     width: 200px;
     display: block;
     margin: 0 auto;
+}
+
+#supported-by__logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (min-width: 450px) {
+    #supported-by__logos {
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 450px) {
