@@ -147,15 +147,22 @@ a {
 }
 
 /* carousel element styling */
-.carousel-cell h3 {
-  font-weight: 500;
-  margin: 0.5rem 0;
-  display: flex;
-  text-align: center;
-  font-size: 1.2rem;
+.carousel-cell .carousel__feature-title,
+.carousel-cell .carousel__feature-title--desktop {
+  font-weight: 700;
+  margin: 0.25rem 0 1rem 0;
+  align-self: flex-start;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  line-height: 1.3rem;
+}
+
+.carousel-cell .carousel__feature-title--desktop {
+  text-align: left;
 }
 
 .carousel__feature-title {
+  display: flex;
   text-align: center;
   font-weight: 700;
 }
@@ -172,19 +179,20 @@ a {
   border-top: 2px solid rgb(244, 242, 242);
 }
 
-.carousel__feature-desc {
-  display: none;
-}
-
-.carousel-cell .carousel__icon {
+.carousel-cell .carousel__icons {
   display: block;
-  width: 3rem;
+  filter: invert(1);
+  width: 6rem;
 }
 
-.carousel-cell .carousel__screenshot {
+.carousel__screenshot {
   display: block;
   height: 325px;
   margin-bottom: 1rem;
+}
+
+.carousel__features {
+  display: none;
 }
 
 /* prev/next button styling */
@@ -199,27 +207,21 @@ a {
   background: rgb(244, 242, 242);
 }
 
-@media screen and (min-width: 450px) {
-  .flickity-button {
-    display: block;
-  }
-}
-
 .flickity-button:hover {
   background: rgb(255, 105, 95);
 }
 
 .flickity-prev-next-button {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 4px;
 }
 
 .flickity-prev-next-button.previous {
-  left: -1.5rem;
+  left: 7rem;
 }
 .flickity-prev-next-button.next {
-  right: -1.5rem;
+  right: 7rem;
 }
 
 .flickity-button-icon {
@@ -242,4 +244,37 @@ a {
 
 .flickity-page-dots .dot.is-selected {
   background: rgb(255, 105, 95);
+}
+
+/* Media queries */
+
+@media screen and (min-width: 450px) {
+  .carousel {
+    height: 450px;
+  }
+
+  .carousel__feature-title {
+    display: none;
+  }
+  .carousel__feature-title--desktop {
+    text-align: center;
+  }
+  .carousel-cell {
+    display: flex;
+    flex-direction: row;
+  }
+  .carousel__features {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    margin: 2rem 5rem;
+    margin-left: 0;
+  }
+  .flickity-button {
+    display: block;
+  }
+  .carousel__screenshot {
+    height: 400px;
+  }
 }
