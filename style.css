@@ -228,6 +228,11 @@ a {
     #menu--toggle span {
         display: none;
     }
+    #nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #menu {
         color: rgb(244, 242, 242);
         position: static;
