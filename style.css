@@ -419,3 +419,14 @@ a {
         height: 400px;
     }
 }
+
+.workerbird__black {
+    height: 100px;
+    filter: invert(1);
+    padding: 0 1rem 2rem 1rem;
+}
+
+.workerbird__white {
+    width: 100px;
+    padding: 0 1rem 2rem 1rem;
+}
