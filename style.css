@@ -87,8 +87,7 @@ nav a:focus {
 #features__content,
 #get-involved__content,
 #contact__content,
-#supported-by__content,
-#terms {
+#supported-by__content {
   text-align: center;
   padding: 2rem 2rem 4rem 2rem;
 }
@@ -170,19 +169,18 @@ footer {
     z-index: 10;
 }
 
-#footer-menu li {
-
-}
-
 #terms,
 #terms-back,
 #privacy,
-#privacy-back {
+#privacy-back,
+#support-body,
+#support-back {
     background-color: rgb(244, 242, 242)
 }
 
 #terms,
-#privacy {
+#privacy,
+#support {
   text-align: center;
   padding: 0rem 2rem 4rem 2rem;
 }
@@ -193,18 +191,27 @@ footer {
   font-size: 1.5rem;
 }
 
-#terms p,
-#privacy p {
+#support-title {
   padding: 1rem;
 }
 
-#terms-link:hover,
-#terms-contact:hover {
+#terms p,
+#privacy p,
+#support p {
+  padding: 1rem;
+}
+
+#policy-link:hover,
+#terms-contact:hover,
+#support-email:hover,
+#delete:hover,
+#questions:hover {
   text-decoration: underline
 }
 
 #arrow,
-#privacy-arrow {
+#privacy-arrow,
+#support-arrow {
   display: inline-block;
   padding: 1%;
   color: black;
@@ -212,7 +219,8 @@ footer {
 }
 
 #arrow:hover,
-#privacy-arrow:hover {
+#privacy-arrow:hover,
+#support-arrow:hover {
   background-color:rgb(255, 105, 95);
   color: #ffff
 }
