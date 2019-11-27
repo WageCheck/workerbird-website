@@ -87,7 +87,6 @@ nav a:focus {
   text-decoration: underline;
 }
 
-#summary__content,
 #features__content,
 #get-involved__content,
 #contact__content,
@@ -104,6 +103,11 @@ nav a:focus {
 #summary_bullets {
   text-align: center;
   padding: 2rem 2rem 2rem 2rem;
+}
+
+#summary__content {
+  text-align: center;
+  padding: 2rem 2rem 0rem 2rem;
 }
 
 #features__content,
