@@ -96,6 +96,7 @@ nav a:focus {
 }
 
 #summary__content,
+#summary_bullets,
 #get-involved__content {
   color: rgb(45, 45, 45);
 }
