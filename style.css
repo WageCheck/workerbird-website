@@ -60,6 +60,10 @@ body {
   background-color: rgb(244, 242, 242);
 }
 
+#bullet_bold {
+  font-weight: 500;
+}
+
 h2 {
   text-align: center;
   font-size: 1.5rem;
@@ -95,6 +99,11 @@ nav a:focus {
 #summary__content,
 #get-involved__content {
   color: rgb(45, 45, 45);
+}
+
+#summary_bullets {
+  text-align: center;
+  padding: 2rem 2rem 2rem 2rem;
 }
 
 #features__content,
@@ -506,6 +515,7 @@ footer {
 
 @media screen and (min-width: 450px) {
   #summary__content p,
+  #summary_bullets li,
   #get-involved__content p,
   #contact__content p,
   #supported-by__content p {
